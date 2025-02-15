@@ -5,9 +5,15 @@ const router = express.Router();
 const tripsController = require("../controllers/trips");
 
 // Define route for the trips endpoint
-router.route("/trips").get(tripsController.tripsList); // GET method routes triplist
+router
+    .route("/trips")
+    .get(tripsController.tripsList) // GET method routes triplist
+    .post(tripsController.tripsAddTrip); // POST Method adds a Trip
 
 // GET method routes tripFindByCode - requries parameter
-router.route("/trips/:tripCode").get(tripsController.tripsFindByCode);
+router
+    .route("/trips/:tripCode")
+    .get(tripsController.tripsFindByCode)
+    .put(tripsController.tripsUpdateTrip);
 
 module.exports = router;
