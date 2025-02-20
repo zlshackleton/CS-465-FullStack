@@ -30,8 +30,6 @@ const travel = async function (req, res, next) {
     
 };
 
-//Module 3 shows its not best practice to run a JSON file everytime and we may need to adjust latr
-
 module.exports = {
     travel,
 };
