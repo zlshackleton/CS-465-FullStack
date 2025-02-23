@@ -7,17 +7,6 @@ This project combines Express HTML, JavaScript, and an Angular Single Page Appli
 Express + HTML/JavaScript: Serves static pages and handles backend logic.  
 Angular SPA: Provides a seamless user experience by updating content dynamically without full-page reloads.  
 For data storage, MongoDB (NoSQL) was chosen for its flexibility, scalability, and JSON-like structure, making it ideal for handling dynamic datasets without rigid schemas.  
-+--------------------+        +----------------------+  
-|  Angular SPA      | <----> |  Express Backend     |  
-|  (Frontend)       |        |  (Node.js API)       |  
-+--------------------+        +----------------------+  
-           |                             |  
-           v                             v  
-+--------------------+        +----------------------+  
-|  HTTP Requests    | <----> |  MongoDB Database    |  
-|  (REST API)       |        |  (NoSQL Storage)     |  
-+--------------------+        +----------------------+  
-
 
 
 ⚡ Functionality  
